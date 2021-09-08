@@ -107,22 +107,11 @@ class SubnavComponent {
         this.router.events.subscribe((result) => {
             const routeName = this.router.url.split('/');
             this.activeRoute = routeName[routeName.length - 1];
-            console.log(this.activeRoute);
         });
-    }
-    onScroll(event) {
-        const elts = document.getElementsByClassName('fade-in-section');
-        for (const elt in elts) {
-            if (window.scrollY >= (elts[elt].getBoundingClientRect().x)) {
-                elts[elt].classList.add('is-visible');
-            }
-        }
     }
 }
 SubnavComponent.ɵfac = function SubnavComponent_Factory(t) { return new (t || SubnavComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"])); };
-SubnavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SubnavComponent, selectors: [["app-subnav"]], hostBindings: function SubnavComponent_HostBindings(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("scroll", function SubnavComponent_scroll_HostBindingHandler($event) { return ctx.onScroll($event); }, false, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresolveWindow"]);
-    } }, decls: 3, vars: 2, consts: [[1, "fade-in-section", "disable-fade-in", "fade-in-hero"], ["class", "hero-main-landing", 4, "ngIf"], ["class", "background-threads careers-threads", 4, "ngIf"], [1, "hero-main-landing"], [1, "background-margin", "background-threads", "careers-threads"], [1, "container"], [1, "row"], [1, "col-12", "col-md-6", "hero-overflow"], [1, "h0", "hero-title", "pt150-90", "pb30", 2, "color", "white"], [1, "mt0", "mb0", "hero-summary", 2, "color", "white"], [1, "col-12", "col-md-6", "hero-image"], [1, "hero-stacked-img", "gatsby-image-wrapper", 2, "position", "relative", "overflow", "hidden"], ["aria-hidden", "true", 2, "width", "100%", "padding-bottom", "108.5%"], ["class", "background-grid-white background-border-none inset", 4, "ngIf"], [1, "background-grid-white", "background-border-none", "inset"], [1, "container", "hero-main-landing-splash"], [1, "row", "d-flex", "align-items-end"], [1, "col-12", "col-md-6", "offset-md-1", "order-1", "order-md-2"], [1, "label", "hero-caption"], [1, "col-12", "col-md-5", "order-2", "order-md-1"], [1, "hero-main-landing-text"], [1, "col-12", "col-md-6", "offset-md-6", "header-subsection"], [1, "col-md-12", "header-subsection-date-section", "d-flex", "justify-content-end", "align-items-center"], [1, "icon", "gatsby-image-wrapper", 2, "position", "relative", "overflow", "hidden"], ["aria-hidden", "true", 2, "width", "100%", "padding-bottom", "100%"], [1, "header-subsection-date"], [1, "background-threads", "careers-threads"], [1, "fade-in-section", "disable-fade-in", "is-visible", "fade-in-hero", "disable-transform"], [1, "container", "hero-splash-container"], [1, "row", "pv90-60"], [1, "col-sm-12", "col-md-8", "hero-splash"], ["routerLink", "/home", 1, "hero-parent-title", "crown-link"], [1, "h1", "small", "mb0", "d-inline"], [1, "hero-title", 2, "color", "white"], [1, "col-12"], [1, "col-sm-12", "col-md-5"]], template: function SubnavComponent_Template(rf, ctx) { if (rf & 1) {
+SubnavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SubnavComponent, selectors: [["app-subnav"]], decls: 3, vars: 2, consts: [[1, "fade-in-section", "disable-fade-in", "fade-in-hero"], ["class", "hero-main-landing", 4, "ngIf"], ["class", "background-threads careers-threads", 4, "ngIf"], [1, "hero-main-landing"], [1, "background-margin", "background-threads", "careers-threads"], [1, "container"], [1, "row"], [1, "col-12", "col-md-6", "hero-overflow"], [1, "h0", "hero-title", "pt150-90", "pb30", 2, "color", "white"], [1, "mt0", "mb0", "hero-summary", 2, "color", "white"], [1, "col-12", "col-md-6", "hero-image"], [1, "hero-stacked-img", "gatsby-image-wrapper", 2, "position", "relative", "overflow", "hidden"], ["aria-hidden", "true", 2, "width", "100%", "padding-bottom", "108.5%"], ["class", "background-grid-white background-border-none inset", 4, "ngIf"], [1, "background-grid-white", "background-border-none", "inset"], [1, "container", "hero-main-landing-splash"], [1, "row", "d-flex", "align-items-end"], [1, "col-12", "col-md-6", "offset-md-1", "order-1", "order-md-2"], [1, "label", "hero-caption"], [1, "col-12", "col-md-5", "order-2", "order-md-1"], [1, "hero-main-landing-text"], [1, "col-12", "col-md-6", "offset-md-6", "header-subsection"], [1, "col-md-12", "header-subsection-date-section", "d-flex", "justify-content-end", "align-items-center"], [1, "icon", "gatsby-image-wrapper", 2, "position", "relative", "overflow", "hidden"], ["aria-hidden", "true", 2, "width", "100%", "padding-bottom", "100%"], [1, "header-subsection-date"], [1, "background-threads", "careers-threads"], [1, "fade-in-section", "disable-fade-in", "is-visible", "fade-in-hero", "disable-transform"], [1, "container", "hero-splash-container"], [1, "row", "pv90-60"], [1, "col-sm-12", "col-md-8", "hero-splash"], ["routerLink", "/home", 1, "hero-parent-title", "crown-link"], [1, "h1", "small", "mb0", "d-inline"], [1, "hero-title", 2, "color", "white"], [1, "col-12"], [1, "col-sm-12", "col-md-5"]], template: function SubnavComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, SubnavComponent_section_1_Template, 14, 1, "section", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, SubnavComponent_section_2_Template, 12, 0, "section", 2);
@@ -144,7 +133,7 @@ SubnavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/max/projects/heroku/dnvc/src/main.ts */"zUnb");
+module.exports = __webpack_require__(/*! C:\Users\Ets NOELI\dnvc\src\main.ts */"zUnb");
 
 
 /***/ }),
@@ -629,7 +618,7 @@ class NavComponent {
     }
 }
 NavComponent.ɵfac = function NavComponent_Factory(t) { return new (t || NavComponent)(); };
-NavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NavComponent, selectors: [["app-nav"]], decls: 30, vars: 9, consts: [[1, "subsite-header", 3, "ngClass"], [1, "fade-in-section", "disable-fade-in", "is-visible", "fade-in-header"], [1, "header-logo"], ["aria-current", "page", "routerLink", "/home", 1, "logo-marque", 3, "click"], [1, "text-logo-title-full", 2, "font-weight", "bolder", "font-size", "30px"], [1, "text-logo-title-short", 2, "font-weight", "bolder", "font-size", "25px"], ["type", "button", "aria-label", "Menu", "aria-controls", "navigation", "aria-expanded", "false", 1, "hamburger", "hamburger--emphatic", 3, "ngClass", "click"], [1, "hamburger-box"], [1, "hamburger-inner"], [1, "navigation-wrapper", "background-split-black", 3, "ngClass"], ["aria-label", "Primary Navigation", 1, "header-nav"], [1, "navigation-menu"], [1, "navigation-menu-item", "subsite-nav"], ["routerLink", "/industries", 3, "click"], ["routerLink", "/sectors", 3, "click"], ["routerLink", "/markets", 3, "click"], ["routerLink", "/notes", 3, "click"], ["routerLink", "/about", 3, "click"]], template: function NavComponent_Template(rf, ctx) { if (rf & 1) {
+NavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NavComponent, selectors: [["app-nav"]], decls: 27, vars: 9, consts: [[1, "subsite-header", 3, "ngClass"], [1, "fade-in-section", "disable-fade-in", "is-visible", "fade-in-header"], [1, "header-logo"], ["aria-current", "page", "routerLink", "/home", 1, "logo-marque", 3, "click"], [1, "text-logo-title-full", 2, "font-weight", "bolder", "font-size", "30px"], [1, "text-logo-title-short", 2, "font-weight", "bolder", "font-size", "25px"], ["type", "button", "aria-label", "Menu", "aria-controls", "navigation", "aria-expanded", "false", 1, "hamburger", "hamburger--emphatic", 3, "ngClass", "click"], [1, "hamburger-box"], [1, "hamburger-inner"], [1, "navigation-wrapper", "background-split-black", 3, "ngClass"], ["aria-label", "Primary Navigation", 1, "header-nav"], [1, "navigation-menu"], [1, "navigation-menu-item", "subsite-nav"], ["routerLink", "/industries", 3, "click"], ["routerLink", "/markets", 3, "click"], ["routerLink", "/notes", 3, "click"], ["routerLink", "/ressource", 3, "click"]], template: function NavComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "header");
@@ -662,25 +651,19 @@ NavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "li", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "a", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NavComponent_Template_a_click_19_listener() { return ctx.close(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Secteurs");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "March\u00E9s");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "li", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "a", 15);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NavComponent_Template_a_click_22_listener() { return ctx.close(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "March\u00E9s");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "notes");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "li", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "a", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NavComponent_Template_a_click_25_listener() { return ctx.close(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "notes");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "a", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NavComponent_Template_a_click_28_listener() { return ctx.close(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "A propos");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Ressources");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -716,8 +699,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: '', loadChildren: () => __webpack_require__.e(/*! import() | home-home-module */ "home-home-module").then(__webpack_require__.bind(null, /*! ./home/home.module */ "ct+p")).then(m => m.HomeModule), pathMatch: 'full' },
     { path: 'home', loadChildren: () => __webpack_require__.e(/*! import() | home-home-module */ "home-home-module").then(__webpack_require__.bind(null, /*! ./home/home.module */ "ct+p")).then(m => m.HomeModule) },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'industries', loadChildren: () => __webpack_require__.e(/*! import() | industries-industries-module */ "industries-industries-module").then(__webpack_require__.bind(null, /*! ./industries/industries.module */ "fhmB")).then(m => m.IndustriesModule) },
     { path: 'sectors', loadChildren: () => __webpack_require__.e(/*! import() | sectors-sectors-module */ "sectors-sectors-module").then(__webpack_require__.bind(null, /*! ./sectors/sectors.module */ "0cCU")).then(m => m.SectorsModule) },
     { path: 'markets', loadChildren: () => __webpack_require__.e(/*! import() | markets-markets-module */ "markets-markets-module").then(__webpack_require__.bind(null, /*! ./markets/markets.module */ "2BY0")).then(m => m.MarketsModule) },
