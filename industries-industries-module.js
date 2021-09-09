@@ -182,8 +182,7 @@ class IndustriesComponent {
                         this.numberOfPage++;
                         page = [];
                     }
-                    else if (page.length < 5 && (lastIndustry.industry[lastIndustry.industry.length - 1] === page[page.length - 1]
-                        || lastIndustry === industry)) {
+                    else if (page.length < 5 && lastIndustry === industry) {
                         console.log('Yes');
                         this.filteredIndustries.push({ pageNumber: this.filteredIndustries.length + 1, pageItem: page });
                         this.numberOfPage++;
