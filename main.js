@@ -730,6 +730,7 @@ const routes = [
     { path: 'about', loadChildren: () => __webpack_require__.e(/*! import() | about-about-module */ "about-about-module").then(__webpack_require__.bind(null, /*! ./about/about.module */ "FQ1g")).then(m => m.AboutModule) },
     { path: 'industries/:industry', loadChildren: () => __webpack_require__.e(/*! import() | industry-industry-module */ "industry-industry-module").then(__webpack_require__.bind(null, /*! ./industry/industry.module */ "qzfY")).then(m => m.IndustryModule) },
     { path: 'markets/:zone', loadChildren: () => __webpack_require__.e(/*! import() | market-market-module */ "market-market-module").then(__webpack_require__.bind(null, /*! ./market/market.module */ "qkvE")).then(m => m.MarketModule) },
+    { path: 'notes/:note', loadChildren: () => __webpack_require__.e(/*! import() | note-note-module */ "note-note-module").then(__webpack_require__.bind(null, /*! ./note/note.module */ "4D6J")).then(m => m.NoteModule) },
     { path: '**', loadChildren: () => __webpack_require__.e(/*! import() | four-zero-four-four-zero-four-module */ "four-zero-four-four-zero-four-module").then(__webpack_require__.bind(null, /*! ./four-zero-four/four-zero-four.module */ "LJgb")).then(m => m.FourZeroFourModule) }
 ];
 class AppRoutingModule {
