@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"about-about-module":"about-about-module","four-zero-four-four-zero-four-module":"four-zero-four-four-zero-four-module","home-home-module":"home-home-module","industries-industries-module":"industries-industries-module","industry-industry-module":"industry-industry-module","market-market-module":"market-market-module","markets-markets-module":"markets-markets-module","note-note-module":"note-note-module","notes-notes-module":"notes-notes-module","ressources-ressources-module":"ressources-ressources-module","sectors-sectors-module":"sectors-sectors-module"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"about-about-module":"about-about-module","footer-details-footer-details-module":"footer-details-footer-details-module","four-zero-four-four-zero-four-module":"four-zero-four-four-zero-four-module","home-home-module":"home-home-module","industries-industries-module":"industries-industries-module","industry-industry-module":"industry-industry-module","market-market-module":"market-market-module","markets-markets-module":"markets-markets-module","note-note-module":"note-note-module","notes-notes-module":"notes-notes-module","ressources-ressources-module":"ressources-ressources-module","sectors-sectors-module":"sectors-sectors-module"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
