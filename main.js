@@ -620,7 +620,7 @@ class NavComponent {
         }
     }
     openAdminApp() {
-        window.open('//dnvc.herokuapp.com/admin/', '_blank');
+        window.open('https://dnvc.herokuapp.com/admin/', '_blank');
     }
 }
 NavComponent.ɵfac = function NavComponent_Factory(t) { return new (t || NavComponent)(); };
@@ -634,7 +634,7 @@ NavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "a", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NavComponent_Template_a_click_4_listener() { return ctx.close(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "span", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "watcher");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "INT'L TRADE watcher");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "span", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "watcher");
